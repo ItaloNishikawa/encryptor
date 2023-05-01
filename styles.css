@@ -1,0 +1,55 @@
+*{
+   margin: 0;
+   padding: 0; 
+   color: white;
+}
+
+body, #input,#submit,#result{
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 a{
+    color:black;
+    text-decoration: none;
+}
+
+#input{
+    height: 50px;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+#submit {
+    background: none;
+    border: none;
+    overflow: hidden;
+}
+
+#encryptIcon{
+    height: 50px;
+
+}
+
+#submit:hover img {
+    opacity: 0.5;
+}
+
+#result{
+    margin: 20px;
+    height: 100px;
+    width: 500px;
+    resize: vertical;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+

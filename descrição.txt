@@ -1,0 +1,45 @@
+O programa funciona de uma maneira bem fácil, com três passos:
+
+1. Primeiro, todas as letras minúsculas e maiúsculas são deslocadas
+três posições para a direita, seguindo a tabela ASCII. Por exemplo,
+a letra 'a' vira 'd', a letra 'y' vira '|', e assim por diante.
+
+2. Depois, a linha é invertida.
+
+3. Por fim, os caracteres a partir da metade são deslocados uma
+posição para a esquerda na tabela ASCII. Por exemplo, 'b' vira 
+'a' e 'a' vira '`'.
+Vamos dar um exemplo: se a entrada for "Texto #3", o programa 
+deve fazer o seguinte:
+
+1. Deslocar as letras: "Wh{wr #3"
+2. Inverter: "3# rw{hW"
+3. Deslocar os caracteres da metade em diante: "3# rvzgV
+
+Passo a Passo
+
+1. Puxar texto escrito no input;
+2. passar na funcão criptografar
+3. receber valor
+4. coloca valor no textera
+
+Funcao criptografar{
+
+    1.receber Texto
+    2.passar por letra a letra
+    3.armazenar letra.charCodeAt(i) 
+    4.if 65 até 90 ou 97 até 122{
+        
+        1.mensagemCriptografada = letra.charCodeAt()+3
+        
+    }
+    5.if 0 até 64 ou 91 ate 96 ou 123 ate 127{
+
+        1.mensagemCriptografada = letra.charCodeAt()
+
+    }
+
+    6. let metade = Mathfloor(mensagemCriptografada.length/2)
+    
+    return mensagemCriptografada;
+}
